@@ -26,15 +26,13 @@ const App = () => {
         <Navbar />
         <ScrollToTop />
         <Routes>
-        <Route path="/">
-            <Route path="/home" element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="projects" element={<Projects />}></Route>
-            <Route path="resume" element={<Resume />}></Route>
-            <Route path="contact" element={<ContactForm />}></Route>
-            {/* <Route path="/Portfolio/blogs" element={<Blogs />}></Route> */}
-            <Route path="/*" element={<PageNotFound />} />
-        </Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/resume" element={<Resume />}></Route>
+          <Route path="/contact" element={<ContactForm />}></Route>
+          {/* <Route path="/Portfolio/blogs" element={<Blogs />}></Route> */}
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </div>
     </Router>
